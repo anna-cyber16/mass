@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="mass_gavr.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Задания первой части выведены в консоли</p>
+    <script>
+        let aa = Array();
+        aa[0] = 2;
+        aa[1] = 3;
+        aa[2] = 4;
+        aa[3] = 5;
+        aa[4] = 4;
+        aa[5] = 3;
+        aa[6] = 2;
+        aa[7] = 1;
+        aa[8] = 5;
+        aa[9] = 6;
+        console.log("Задание 1:");
+        console.log(aa[0] + " " + aa[1] + " " + aa[2] + " " + aa[3] + " " + aa[4] + " " + aa[5] + " " + aa[6] + " " + aa[7] + " " + aa[8] + " " + aa[9]);
+
+        aa[0] = 2;
+        aa[1] = 2 * 2;
+        aa[2] = 2 * 2 * 2;
+        aa[3] = 2 * 2 * 2 * 2;
+        aa[4] = 2 * 2 * 2 * 2 * 2;
+        aa[5] = 2 * 2 * 2 * 2 * 2 * 2;
+        console.log("Задание 2:");
+        console.log(aa[0] + " " + aa[1] + " " + aa[2] + " " + aa[3] + " " + aa[4] + " " + aa[5]);
+
+        console.log("Задание 3:");let res = "";
+        for (let i = 0; i < 6; i++) {
+            aa[i] = Math.pow(2, i + 1);
+            res += aa[i] + " ";
+        }
+        console.log(res);
+        
+        console.log("Задание 4:");
+        aa[0] = Math.floor(Math.random() * 10);
+        aa[1] = aa[0] * 2;
+        aa[2] = aa[1] + 1;
+        aa[3] = aa[0] * aa[1];
+        aa[4] = aa[1] * aa[3];
+        console.log(aa[0] + " " + aa[1] + " " + aa[2] + " " + aa[3] + " " + aa[4]);
+        </script>
+    
+    <h3>Часть 2:</h3>
+    <h3>Задание 1: </h3>
+    <p><span id="out11"></span></p>
+    <p>Среднее значение =<span id="out12"></span></p>
+    
+    <h3>Задание 2: </h3>
+    <p><span id="out21"></span></p>
+    <p>Количество "а" в масиве:<span id="out22"></span></p>
+    
+    <h3>Задание 3: </h3>
+    <p><span id="out31"></span></p>
+    <p><span id="out32"></span></p>
+</body>
+
+</html>
